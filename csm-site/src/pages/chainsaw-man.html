@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chainsaw Man - Landing Page</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+
+    @layer base {
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    }
+
+    .font-mont{
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @theme{
+        --color-red: rgb(200, 31, 46, 0.6);
+        --background: #1F2933;
+        --black: #0A0A0A;
+        --black-80: rgb(10, 10, 10, 0.75);
+        --color-text2: #F7F8FA;
+        --title: #BFC5CB;
+        --orange: #FF7A18;
+        --yellow: #FFCC00;
+        --border-color: #9E9E9E;
+        --blue: rgb(48, 163, 255, 0.5);
+        --font: 'Bebas Neue', sans serif;
+      }
+      
+      /* Correção para rolagem horizontal indesejada */
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+
+</head>
+
+<body class="container max-w-full flex flex-col min-h-screen bg-(--background)">
+
+  <!-- Header -->
+
+  <header id="header" class="container max-w-full bg-(--color-red)">
+    
+    <nav
+    class="fixed w-full h-auto min-h-20 flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-20 py-4 lg:py-0 mx-auto bg-(--black-80) text-lg lg:text-xl border lg:rounded-br-[50px] lg:rounded-bl-[50px] z-50 backdrop-blur-sm">
+
+    <div class="flex justify-center mt-2 lg:mt-4">
+      <a href="#header">
+        <img class="w-50 lg:w-50" src="../img/logo.svg" alt="logo chainsaw man">
+      </a>
+    </div>
+
+      <div class="flex flex-wrap justify-center gap-4 lg:gap-10 pb-4 lg:pb-0">
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Sobre">Sobre</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Sinopse">Sinopse</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Elenco">Elenco</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Anime">Anime</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Manga">Mangá</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Filme">Filme</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Autor">Autor</a>
+          <a class="text-(--color-text2) lg:pt-5 hover:underline hover:text-(--orange) font-bebas" href="#Porque-ver">Porque ver</a>
+      </div>
+
+    </nav>
+  </header>
+
+  
+
+  <main class="mx-auto grow w-full pt-32 lg:pt-0"> 
+
+    <div class="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-20 items-center justify-items-center bg-(--color-red) min-h-screen lg:h-200 py-10 lg:py-0">
+
+      <img class="w-64 lg:size-120 lg:p-20 lg:m-20" src="../img/PochitaAnime.webp" alt="pochita imagem">
+
+      <div class="px-6 lg:px-0 text-center lg:text-left">
+        <H1 class="text-(--color-text) font-bebas text-5xl lg:text-6xl lg:p-15 mb-4">O que é Chainsaw man?</H1>
+
+        <h4 class="text-(--color-text2) font-mont text-xl lg:text-3xl lg:text-left lg:pr-80 mb-4">“ O segredo para levar uma vida feliz neste
+          mundo é que a ignorância é uma bênção. ”</h4>
+
+        <p class="text-(--color-text2) font-mont text-xl lg:text-3xl lg:text-right lg:pr-80"> — Quanxi</p>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center pt-10 lg:pt-20 lg:-mt-30">
+      <a href="#Sobre">
+        <img class="animate-bounce w-10 lg:w-auto" src="../img/arrow-down-circle.png" alt="seta apontando par abaixo">
+      </a>
+    </div>
+
+    <!--  -->
+
+    <!-- Sobre -->
+
+    <section class="mt-20 lg:mt-200">
+
+      <div class="relative flex justify-center items-center mb-8">
+          <img class="w-[90%] max-w-md lg:max-w-4xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+          <h1 id="Sobre" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-5xl lg:text-8xl z-20 pt-2">
+            Sobre
+          </h1>
+      </div>
+
+      <div class="bg-(--blue) flex flex-col items-center pt-10 lg:pt-20 pb-10 lg:pb-20 px-6 relative z-30">
+
+        <img class="w-full max-w-2xl rounded-lg shadow-lg" src="../img/aki-image.png" alt="imagem de aki">
+
+        <p class="text-(--color-text2) font-mont text-lg lg:text-3xl text-justify lg:text-left lg:px-90 pt-10 lg:pt-50 max-w-7xl"> 
+            Chainsaw Man é um mangá/anime shounen
+          com ação mas é uma obra que retrata o vazio existencial, a fragilidade da vida e o poder destrutivo dos medos
+          humanos, usando os demônios como metáfora para a inevitabilidade da dor e da morte.
+        </p>
+
+      </div>
+
+      <div class="flex justify-center">
+        <img class="pt-20 lg:pt-50 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+      </div>
+
+    </section>
+
+    <!--  -->
+
+
+    <!-- Sinopse -->
+    <section class="mt-20 lg:mt-80 scroll-mt-24">
+
+      <div class="relative flex justify-center items-center mt-20 lg:mt-150">
+        <img class="w-[90%] max-w-md lg:max-w-4xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+        <h1 id="Sinopse" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-5xl lg:text-8xl z-20 pt-2">
+          Sinopse
+        </h1>
+      </div>
+
+      <div class="flex flex-col lg:flex-row mt-10 lg:mt-50 items-center relative z-30">
+
+        <div class="w-full lg:w-3/5 bg-(--color-red) rounded-r-[50px] text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-justify pl-6 pr-6 py-8 lg:pl-30 lg:pr-20 lg:py-12 shadow-lg leading-relaxed order-2 lg:order-1">
+          Denji é um jovem caçador de demônios que vive em condições miseráveis, tentando pagar uma dívida herdada de
+          seu falecido pai. Seu único companheiro é Pochita, um cão-demônio motosserra. Após ser traído e morto, Denji
+          renasce ao se fundir com Pochita, tornando-se o Chainsaw Man — um híbrido capaz de destruir demônios com
+          lâminas que brotam de seu corpo. Agora sob o comando da enigmática Makima e trabalhando para a Segurança
+          Pública, Denji precisa lutar por sua sobrevivência em um mundo cruel, onde cada aliado pode esconder intenções
+          sombrias.
+        </div>
+
+        <div class="w-full lg:w-2/5 flex justify-center lg:justify-end order-1 lg:order-2 lg:-ml-20 z-20 pb-10 lg:pb-0">
+          <img class="w-auto max-h-[300px] sm:max-h-[400px] lg:max-h-none drop-shadow-2xl" src="../img/chainsaw-man.png" alt="chainsaw-man">
+        </div>
+
+      </div>
+
+      <div class="flex flex-col justify-center px-6 max-w-screen-2xl mx-auto">
+
+        <div class="flex justify-center mt-10 lg:mt-100">
+          <img class="w-full max-w-4xl rounded-lg shadow-lg" src="../img/denji-power-in-the-train.png" alt="Denji e Power sentados no trem">
+        </div>
+
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-center pt-10 lg:pt-30 lg:px-110 leading-relaxed"> 
+            Chainsaw Man, é um dos mangás mais
+            impactantes da última década. Misturando ação intensa, horror psicológico e crítica social, a obra cativa pela
+            sua originalidade e personagens fora do comum. Se você busca um mangá que fuja do convencional, com momentos
+            chocantes e desenvolvimento narrativo instigante, essa é a escolha certa.</p>
+
+        <div class="flex justify-center">
+          <img class="pt-20 lg:pt-100 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--  -->
+
+    <!-- Elenco -->
+
+    <section class="scroll-mt-24" id="Elenco">
+
+        <div class="relative flex justify-center items-center mt-20 lg:mt-150">
+            <img class="w-[95%] max-w-lg lg:max-w-6xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+            <h1 class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-4xl sm:text-5xl lg:text-7xl z-20 pt-2 text-center leading-none">
+              Personagens do Elenco
+            </h1>
+        </div>
+  
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-14 px-6 lg:px-40 mt-20 pt-10 relative z-30">
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl z-0">
+                      Denji
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-(--color-red) z-10 cursor-pointer" 
+                 src="../img/denji-pfp.png" alt="Denji">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Pochita
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-orange-700 z-10 cursor-pointer" 
+                 src="../img/pochita-pfp.png" alt="Pochita">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Makima
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-red-600 z-10 cursor-pointer" 
+                 src="../img/makima-pfp.png" alt="Makima">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Aki
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-(--blue) z-10 cursor-pointer" 
+                 src="../img/aki-pfp.png" alt="Aki">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Power
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-rose-500 z-10 cursor-pointer" 
+                 src="../img/power-pfp.png" alt="Power">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Kishibe
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-white z-10 cursor-pointer" 
+                 src="../img/kishibe-pfp.png" alt="Kishibe">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Kobeni
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-pink-900 z-10 cursor-pointer" 
+                 src="../img/kobeni-pfp.png" alt="Kobeni">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Reze
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-purple-900 z-10 cursor-pointer" 
+                 src="../img/reze-pfp.png" alt="Reze">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Himeno
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-sky-600 z-10 cursor-pointer" 
+                 src="../img/himeno-pfp.png" alt="Himeno">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Asa
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-purple-500 z-10 cursor-pointer" 
+                 src="../img/asa-pfp.png" alt="Asa">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Quanxi
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-gray-400 z-10 cursor-pointer" 
+                 src="../img/quanxi-pfp.png" alt="Quanxi">
+          </div>
+  
+          <div class="relative h-24 lg:h-28 mt-6">
+              <div class="bg-(--border-color) w-full h-full rounded-tl-[3rem] rounded-br-lg flex items-center justify-end pr-6 lg:pr-10 shadow-md">
+                  <p class="text-white font-mont text-5xl lg:text-6xl">
+                      Anjo
+                  </p>
+              </div>
+              <img class="absolute -top-6 -left-2 lg:-top-8 lg:-left-4 size-32 lg:size-40 rounded-full object-cover shadow-lg transition-transform duration-200 hover:scale-105 hover:border-4 hover:border-orange-900 z-10 cursor-pointer" 
+                 src="../img/anjo-pfp.png" alt="Anjo">
+          </div>
+  
+        </div>
+  
+        <div class="flex justify-center">
+          <img class="pt-20 lg:pt-100 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+        </div>
+  
+    </section>
+<!--  -->
+
+<!-- Anime -->
+
+    <section>
+
+      <div class="relative flex justify-center items-center mt-20 lg:mt-150">
+        <img class="w-[90%] max-w-md lg:max-w-4xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+        <h1 id="Anime" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-5xl lg:text-8xl z-20 pt-2">
+          Anime
+        </h1>
+      </div>
+
+      <div class="relative flex justify-center mt-10 lg:mt-0 w-full px-4 z-30">
+        <div class="relative w-full max-w-3xl">
+             <img class="hidden lg:block absolute -bottom-4 -left-4 lg:-ml-10 lg:mt-10 w-full h-full opacity-80" src="../img/Rectangle 21.png" alt="">
+            <img class="relative z-10 w-full h-auto shadow-2xl" src="../img/anime-pfp.png" alt="anime-poster">
+        </div>
+      </div>
+
+      <div class="pt-10 lg:pt-60 px-6 z-30 relative">
+
+        <p class="text-white text-lg lg:text-3xl text-justify lg:text-left font-mont mb-10 lg:mb-20 lg:px-80">14 de dezembro de 2020, o anime Chainsaw Man foi
+          anunciado após a conclusão da Saga da Segurança Pública no mangá. Por volta dessa época, o anime teve uma
+          apresentação ao vivo durante a Jump Festa 2021 em 19 de dezembro de 2020. Também foi confirmado que o estúdio
+          MAPPA produziria a adaptação para anime de TV. </p>
+
+        <p class="text-white text-lg lg:text-3xl text-justify lg:text-left font-mont mb-10 lg:mb-20 lg:px-80">O primeiro trailer do anime foi exibido em 27 de
+          junho de 2021 durante o evento de 10º aniversário da MAPPA, com a revelação da equipe de produção do anime e
+          várias cenas que adaptavam os primeiros capítulos do mangá. Em 19 de dezembro de 2021, a adaptação para anime
+          teve outra apresentação durante a Jump Festa 2022, que revelou a data de lançamento do anime através do
+          segundo trailer: outubro de 2022. </p>
+      </div>
+
+      <div class="flex justify-center">
+        <img class="pt-20 lg:pt-50 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+      </div>
+
+
+    </section>
+
+    <!--  -->
+
+    <!-- Mangá -->
+
+    <section class="scroll-mt-24">
+
+      <div class="relative flex justify-center items-center mt-20 lg:mt-100">
+        <img class="w-[90%] max-w-md lg:max-w-4xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+        <h1 id="Manga" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-5xl lg:text-8xl z-20 pt-2">
+          Mangá
+        </h1>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-40 mt-16 lg:mt-50 px-6 items-center max-w-screen-2xl mx-auto relative z-30">
+
+        <div class="order-2 lg:order-1 text-justify lg:text-end">
+          <p class="text-white text-base md:text-lg lg:text-2xl font-mont mb-6 lg:mb-10 lg:px-10">
+            Chainsaw Man é um mangá japonês escrito e
+            ilustrado por Tatsuki Fujimoto. A primeira parte foi publicada na revista Weekly Shonen Jump da editora
+            Shueisha de dezembro de 2018 até dezembro de 2020, com seus capítulos coletados em vinte e dois volumes.
+          </p>
+
+          <p class="text-white text-base md:text-lg lg:text-2xl font-mont mb-6 lg:mb-10 lg:px-10">
+            A arte de Chainsaw Man encena o caos íntimo
+            como estética. Em vez de polimento “bonito”, privilegia energia, ritmo e montagem — uma sensação de cinema
+            impresso em papel. A violência é linguagem emocional; a ternura, contracampo. Forma e conteúdo se encontram
+            para fazer você sentir antes de entender.
+          </p>
+        </div>
+
+        <div class="order-1 lg:order-2 flex justify-center px-4">
+             <div class="relative w-full max-w-[300px] lg:max-w-[400px]">
+                <img class="absolute top-0 left-0 w-full h-full -z-10 rounded-sm translate-x-4 translate-y-4 lg:translate-x-6 lg:translate-y-6" src="../img/retangulo-yellow.png" alt="retangulo amarelo">
+                
+                <img class="relative z-10 w-full h-auto rounded-sm border border-white/10" src="../img/chainsaw-poster-manga.png" alt="poster mangá">
+             </div>
+        </div>
+
+      </div>
+
+      <div class="flex justify-center">
+        <img class="pt-20 lg:pt-100 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+      </div>
+
+    </section>
+
+    <!--  -->
+
+    <!-- Filme -->
+
+    <section class="scroll-mt-24">
+
+      <div class="relative flex justify-center items-center mt-20 lg:mt-100">
+        <img class="w-[90%] max-w-md lg:max-w-4xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+        <h1 id="Filme" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-5xl lg:text-8xl z-20 pt-2">
+          Filme
+        </h1>
+      </div>
+
+      <div class="flex justify-center px-6 mt-16 lg:mt-10 relative z-30">
+        <div class="relative w-full max-w-4xl">
+             <img class="absolute inset-0 w-full h-full -z-10 opacity-80 -translate-x-3 -translate-y-4 lg:-translate-x-6 lg:-translate-y-6" src="../img/Rectangle 21.png" alt="">
+             
+             <img class="relative z-10 w-full h-auto shadow-2xl rounded-sm" src="../img/poster-filme.png" alt="poster do filme">
+        </div>
+      </div>
+
+      <div class="pt-10 lg:pt-55 px-6 max-w-screen-2xl mx-auto relative z-30">
+        <p class="text-white text-base md:text-lg lg:text-2xl text-justify font-mont mb-6 lg:mb-10 lg:px-80 leading-relaxed">
+            O arco de Reze em Chainsaw Man é uma tragédia
+            romântica que expõe a fragilidade dos desejos humanos: nele, amor e violência se entrelaçam como cinema
+            poético, revelando que até os sentimentos mais puros podem ser detonados por forças maiores.
+        </p>
+
+        <p class="text-white text-base md:text-lg lg:text-2xl text-justify font-mont mb-6 lg:mb-10 lg:px-80 leading-relaxed"> 
+            O arco é menos sobre explosões e mais sobre
+            a impossibilidade de conciliar amor e sobrevivência em um mundo cruel. É cinema dentro do mangá: uma história
+            que começa como comédia romântica, se transforma em suspense e termina como tragédia inevitável. Fujimoto nos
+            lembra que, como no cinema, a vida é feita de cortes bruscos — e nem sempre há espaço para finais felizes.
+        </p>
+
+        <p class="text-white text-base md:text-lg lg:text-2xl text-justify font-mont mb-6 lg:mb-10 lg:px-80 leading-relaxed">
+            É animado pelo Studio MAPPA e foi lançado em
+            19 de Setembro de 2025 no Japão, enquanto no Brasil foi lançado em 23 de Outubro de 2025.
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <img class="pt-20 lg:pt-60 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- Autor -->
+
+    <section class="scroll-mt-24">
+
+      <div class="relative flex justify-center items-center mt-20 lg:mt-100">
+        <img class="w-[90%] max-w-md lg:max-w-4xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+        <h1 id="Autor" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-5xl lg:text-8xl z-20 pt-2">
+          Autor
+        </h1>
+      </div>
+
+      <div class="flex justify-center mt-16 lg:mt-0 relative z-30">
+        <img class="size-40 md:size-60 lg:size-100 rounded-full" src="../img/autor-pfp.png" alt="foto do autor">
+      </div>
+
+      <div class="flex flex-col justify-center mt-10 lg:mt-20 bg-(--color-red) h-auto min-h-[300px] w-11/12 lg:w-[900px] rounded-r-[50px] p-8 lg:p-12 shadow-lg lg:-mt-10 lg:pt-20 relative z-20">
+
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-justify lg:text-left lg:px-10 leading-relaxed">
+            Tatsuki Fujimoto (タツキFujimoto Tatsuki ?)藤ふじ本もと é um artista de mangá japonês conhecido por diversas obras
+            como: Fire Punch, Sayonara Eri, Look back, e o tão famigerado Chainsaw Man, sendo a obra que mais teve um
+            estouro nas midias sociais.
+        </p>
+
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-justify lg:text-left lg:px-10 pt-6 leading-relaxed">
+            Atualmente, algumas de suas obras
+            receberam animação, tais como: Look Back, e um seriado de varios One-shots, chamado de 17-26, onde apresentam
+            oito historias escritas por ele aos seus 17 à 26 anos.
+        </p>
+
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-justify lg:text-left lg:px-10 pt-6 leading-relaxed">
+            E, ainda esse ano (2026), teve o filme Arco De Reze adaptado, de sua Franquia de Chainsaw Man.
+        </p>
+
+      </div>
+
+      <div class="flex justify-center">
+        <img class="pt-20 lg:pt-100 w-3/4 lg:w-auto" src="../img/Line 2.png" alt="linha separadora">
+      </div>
+
+    </section>
+
+    <!--  -->
+
+    <!-- Por que ver -->
+    <section class="scroll-mt-24">
+
+      <div class="relative flex justify-center items-center mt-20 lg:mt-150 px-4">
+        <img class="w-[90%] max-w-lg lg:max-w-6xl h-auto z-10" src="../img/border.png" alt="borda de serras">
+        <h1 id="Porque-ver" class="absolute inset-0 flex items-center justify-center text-(--title) font-bebas text-4xl sm:text-5xl lg:text-8xl z-20 pt-2 text-center leading-none">
+            Porque ver<br class="md:hidden"> Chainsaw Man?
+        </h1>
+      </div>
+
+      <div class="flex justify-center px-6 mt-16 lg:mt-10 relative z-30">
+         <div class="relative w-full max-w-4xl">
+            <img class="absolute inset-0 w-full h-full -z-10 rounded-sm translate-x-3 translate-y-3 lg:translate-x-6 lg:translate-y-6" src="../img/retangulo-cinza.png" alt="retangulo cinza">
+            
+            <img class="relative z-10 w-full h-auto rounded-sm" src="../img/photo-final.png" alt="denji e nayuta passeando">
+         </div>
+      </div>
+
+      <div class="pt-10 lg:pt-40 px-6 max-w-screen-2xl mx-auto relative z-30">
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-center lg:px-80 pt-5 pb-5 leading-relaxed">
+            Você gosta quando uma
+            história não trata seu coração como um enfeite? Chainsaw Man corta o verniz e mostra desejo, medo e amor sem
+            maquiagem. Ele fala a linguagem do cinema e encara o vazio com honestidade — e é justamente aí que fica
+            irresistível.
+        </p>
+
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-center lg:px-80 pt-5 pb-5 leading-relaxed">
+            Chainsaw Man não é
+            apenas um anime de ação, mas uma obra que mistura brutalidade, emoção e filosofia sobre o que significa ser
+            humano em meio ao caos.
+        </p>
+
+        <p class="text-(--color-text2) font-mont text-base md:text-lg lg:text-2xl text-center lg:px-80 pt-5 pb-20 lg:pb-30 leading-relaxed">
+            Assista porque ele não
+            te promete sentido — ele te convida a criá‑lo. Entre o beijo e a explosão, Chainsaw Man te dá algo raro: a
+            chance de sentir que, mesmo no caos, seus pequenos desejos são suficientes para manter você vivo e humano.
+        </p>
+      </div>
+
+    </section>
+    <!--  -->
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="h-auto lg:h-160 bg-(--black) text-xl pb-10">
+
+    <div class="flex justify-center bg-(--black) mt-20 lg:mt-40 mb-10">
+      <a href="#header">
+        <img class="w-50 lg:w-3xs" src="../img/logo.svg" alt="logo chainsaw man">
+      </a>
+    </div>
+
+
+    <nav class="w-full flex flex-wrap gap-6 lg:gap-20 justify-center mx-auto bg-(--black-80) z-20 py-4">
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Sobre">Sobre</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Sinopse">Sinopse</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Elenco">Elenco</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Anime">Anime</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Manga">Mangá</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Filme">Filme</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Autor">Autor</a>
+      <a class="text-(--color-text2) hover:underline hover:text-(--orange) font-bebas" href="#Porque-ver">Porque ver</a>
+    </nav>
+
+    <div class="flex justify-center pt-10 lg:pt-20">
+      <img class="w-3/4 lg:w-auto" src="../img/Divider.png" alt="linha separadora">
+    </div>
+
+    <div class="flex flex-col-reverse lg:flex-row justify-between items-center px-6 lg:mr-80 pt-10 lg:pt-20 gap-6">
+
+      <p class="text-(--color-text2) font-bebas text-center lg:ml-80 pb-20">Copyright &copy; 2025 Apenas_alguém</p>
+
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-20 text-center pb-10 lg:pb-20">
+        <p class="text-(--color-text2) font-bebas underline hover:text-(--orange)">Privacy Policy</p>
+        <p class="text-(--color-text2) font-bebas underline hover:text-(--orange)">Terms of Service</p>
+        <p class="text-(--color-text2) font-bebas underline hover:text-(--orange)">Cookies Settings</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--  -->
+
+</body>
+</html>

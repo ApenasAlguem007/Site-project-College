@@ -1,0 +1,168 @@
+/* Reset (seu original permanece) */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+  --button: #F7F8FA;
+  --title1: #BFC5CB;
+  --title2: #0A0A0A;
+  --background: #1F2933;
+  --color1: #C81F2E;
+  --color2: #FF7A18;
+  --color3: #FFCC00;
+  --color4: #2EA3FF;
+  --color5: #0a0a0a;
+  --font-title: "Bebas Neue", sans-serif;
+}
+
+/* Base */
+main{
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: linear-gradient(90deg, #1B1527 46.17%, #563993 100%);
+  overflow: hidden;
+}
+
+main > img {
+  max-width: 50%;
+  height: 100%;
+
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 40%;
+  min-width: 260px;
+  padding: 100px 20px;
+  gap: 24px;
+  color: var(--button);
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+button{
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 32px;
+  background-color: var(--button);
+  color: var(--title2);
+  border-radius: 23px;
+  height: 63px;
+  width: 228px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgba(191, 197, 203, 0.60);
+  color: var(--title1);
+}
+
+button > a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Media query para tablets e telas estreitas até 1024px */
+@media (max-width: 1024px) {
+
+  main > img {
+    max-width: 35%;
+  }
+
+  .logo {
+    width: 50%;
+    padding: 60px 16px;
+  }
+
+  button {
+    width: 210px;
+    height: 56px;
+    font-size: 28px;
+  }
+}
+
+/* Mobile: unificar ajustes para <= 768px */
+@media (max-width: 768px) {
+  main{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100dvh;
+  }
+
+  main > img {
+    max-width: 85%;
+    margin: 12px 0;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 20px 12px;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+  }
+
+  .logo img {
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .button-wrapper {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+
+  button {
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
+/* Pequenas telas muito estreitas (ex: 360px) */
+@media (max-width: 360px) {
+  .logo {
+    padding: 16px 10px;
+  }
+
+  button {
+    width: 160px;
+    font-size: 20px;
+    height: 46px;
+  }
+
+  main > img {
+    width: 70%;
+  }
+}

@@ -6,4 +6,6 @@ O figma abaixo contém elementos alterados quanto ao código executado, e o mesm
 
 OBS: Tive um pouco da ajuda de IA para ajustar a Responsividade..
 
+OBS: As imagens utilizadas não são de minha autoria e nem está sendo utilizada para fins lucrativos, apenas para aprendizado.
+
 https://www.figma.com/design/8WutBTjYMuTmS1xWk0FaDZ/Sem-t%C3%ADtulo?node-id=0-1&t=fJw1vYxU558dyVjf-1
